@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import uce.edu.cloud.model.Rol;
 import uce.edu.cloud.service.IRolService;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/roles")
 public class RolController {
