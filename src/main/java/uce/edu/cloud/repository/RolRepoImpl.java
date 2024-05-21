@@ -16,7 +16,7 @@ public class RolRepoImpl implements IRolRepo {
 
     @Override
     public Rol consultarPorId(Integer id) {
-        TypedQuery<Rol> myQuery = this.em.createQuery("SELECT r FROM Rol r WHERE r.id = :id", Rol.class);
+        TypedQuery<Rol> myQuery = this.em.createQuery("SELECT r FROM roles r WHERE r.id = :id", Rol.class);
         myQuery.setParameter("id", id);
         return myQuery.getSingleResult();
     }
